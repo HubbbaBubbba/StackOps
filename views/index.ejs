@@ -1,0 +1,25 @@
+<h3>Course Library</h3> 
+ <% for (var i=0; i< courseData.length; i++ ) { %>
+  <form method="POST" action="/deleteCourse/<%= courseData[i]._id %>" style="display: inline-block">  
+    <%= courseData[i].game %> (<%= courseData[i].size %>) 
+    <input type="submit" value="delete"> 
+  </form>
+  <br/>
+<% } %> 
+
+<h3>Update the Course</h3> 
+ <% for (var i=0; i< courseData.length; i++ ) { %>
+  <form method="POST" action="/updateCourse/<%= courseData[i]._id %>" style="display: inline-block">  
+    <%= courseData[i].game %> (<%= courseData[i].size %>) 
+    <input type="submit" value="update"> 
+  </form>
+  <br/>
+<% } %> 
+<!-- update our db -->
+
+<form method="get" action="/create">
+    <p>Add a course</p>
+    <input type="text" name="ejsFormName" value=""> 
+    <input type="submit" onclick="document.location.reload()">
+  </form>
+  
