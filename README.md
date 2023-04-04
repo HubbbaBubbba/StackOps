@@ -1,6 +1,6 @@
 # Team Stack-Ops
 
-# Course Insider
+# CourseInsider
 
 **As a** student
 
