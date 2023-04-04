@@ -20,4 +20,4 @@ jobs:
         with:
           project: CIS Course Database
           column: To Do
-          repo-token: ${{ secrets.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 }}
+          repo-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
