@@ -1,11 +1,11 @@
 # Stack-Ops
 
 # CIS Classes Database Project
-**As a** ...
+**As a** student
 
-**I will** ...
+**I want** to find classes that have python 
 
-**So that** ...
+**So that** I can take them
 
 ## Introduction
 The CIS Classes Database Project is a web development project aimed at creating a platform where students can share their experiences about the CIS classes they have taken. The platform will offer a database of CIS courses, and students will have an opportunity to provide feedback on the courses they have already taken.
