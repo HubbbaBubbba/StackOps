@@ -1,6 +1,7 @@
-# Stack-Ops
+# Team Stack-Ops
 
-# CIS Classes Database Project
+# Course Insider
+
 **As a** student
 
 **I want** to find classes that have python 
