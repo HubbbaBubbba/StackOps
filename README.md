@@ -1,6 +1,12 @@
 # Stack-Ops
 
 # CIS Classes Database Project
+**As a** ...
+
+**I will** ...
+
+**So that** ...
+
 ## Introduction
 The CIS Classes Database Project is a web development project aimed at creating a platform where students can share their experiences about the CIS classes they have taken. The platform will offer a database of CIS courses, and students will have an opportunity to provide feedback on the courses they have already taken.
 ________________________________________
