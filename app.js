@@ -6,14 +6,13 @@ const PORT = process.env.PORT || 3000;
 const bodyParser = require('body-parser')
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
-
-//nb3amjtQWhSN6ibH
+// let authenticated = false;
 
 const client = new MongoClient(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 app.use(bodyParser.urlencoded({ extended: true }))
-
+app.use(express.static("public"));
 app.set('view engine', 'ejs');
-
+app.use(express.static("public"));
 async function cxnDB(){
 
   try{
@@ -34,13 +33,41 @@ async function cxnDB(){
 }
 
 
+
 app.get('/', async (req, res) => {
 
-  let result = await cxnDB().catch(console.error); 
+if(req.query.username && req.query.password)   
+{ //authenticated
+  console.log("authenticated", req.query.username);
 
-  // console.log("get/: ", result);
+}
+else
+{
+  //you aint 
+  console.log("not", req.query.username);
 
-  res.render('login', {  courseData : result })
+}
+
+
+  if(true){
+    console.log("im authenticated!"); 
+
+    let result = await cxnDB().catch(console.error); 
+    // console.log("get/: ", result);
+    res.render('index', {  courseData : result })
+}
+// else if(authenticated === false) {
+//   console.log("im NOT authenticated!"); 
+//   // authenticated = true;
+//   res.redirect('/login');
+// }
+})
+
+app.get('/login', async(req,res) => {
+
+  res.render('login'); 
+
+  // res.render('login', {  courseData : result })
 })
 
 //CREATE
