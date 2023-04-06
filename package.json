@@ -5,7 +5,7 @@
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "mongodb": "^5.0.1",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.22"
   },
   "name": "miniature-octo-adventure-mike",
   "description": "",
