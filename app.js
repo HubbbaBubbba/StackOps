@@ -40,7 +40,7 @@ app.get('/', async (req, res) => {
 
   // console.log("get/: ", result);
 
-  res.render('index', {  courseData : result })
+  res.render('login', {  courseData : result })
 })
 
 //CREATE
