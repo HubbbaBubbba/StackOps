@@ -1,3 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Search Courses</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/styles/index.css">
+   
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://github.com/HubbbaBubbba/StackOps" target ="_blank">Stack OP's HQ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/ethan-hubbard-1a74b2244/" target ="_blank">LinkedIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/HubbbaBubbba/FoxTrot-Lab-Mid-Term" target ="_blank">Foxtrot Repo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" target ="_blank">Check this page's validation</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 <h3>Course Library</h3> 
  <% for (var i=0; i< courseData.length; i++ ) { %>
   <form method="POST" action="/deleteCourse/<%= courseData[i]._id %>" style="display: inline-block">  
@@ -22,4 +54,10 @@
     <input type="text" name="ejsFormName" value=""> 
     <input type="submit" onclick="document.location.reload()">
   </form>
-  
+  <footer class="footer bg-light text-center">
+    <div class="container">
+      <span class="text-muted">© WIP, stand by </span>
+    </div>
+  </footer>
+</body>
+</html>
