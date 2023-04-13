@@ -10,17 +10,18 @@
 </head>
 <body>
     <main id="main-holder">
-        <h1 id="login-header">Login</h1>
+        <h1 id="login-logo">Welcome to CourseInsider</h1>
+        <h2 id="login-header">Please Login</h2>
         
-        <div id="login-error-msg-holder">
+        <!-- <div id="login-error-msg-holder">
           <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-        </div>
+        </div> -->
         
         <form method="get" action="/" id="login-form">
           <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
           <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
           <input type="submit" value="Login" id="login-form-submit">
-          <p href="#" target="_blank"><u>Forgot Password?</u></p>
+          <a href="#" target="_blank" id="forgot"><u>Forgot Password?</u></a>
         </form>
       
       </main>
