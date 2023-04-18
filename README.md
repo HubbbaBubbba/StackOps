@@ -61,7 +61,7 @@ app.get('/login', async(req,res) => {
 ```
 5) Example of Issue Card
   - [Closed Issue](https://github.com/HubbbaBubbba/StackOps/issues/3)
-6)Workflow
+6) Workflow
 ``` diff
 name: Move assigned card
 on:
@@ -78,3 +78,5 @@ jobs:
           column: Todo
           repo-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 ```
+ - Still in Progress
+ - Will allow us to automatically move items from new -> ToDo when assigning new members to issues.
