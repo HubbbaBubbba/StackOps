@@ -13,11 +13,13 @@
 **So that** I can take them
 
 # The Process
-1) Introduction of product
+1)Project Board
+ - [CourseInsider Project Board](https://github.com/users/HubbbaBubbba/projects/2)
+2) Introduction of product
  - [Intro Wiki](https://github.com/HubbbaBubbba/StackOps/wiki)
-2) Rough Draft Design
+3) Rough Draft Design
  - [Design Wiki](https://github.com/HubbbaBubbba/StackOps/wiki/The-Process)
-3) Some of our login code
+4) Some of our login code
 
 ```javascript
 app.get('/', async (req, res) => {
@@ -56,4 +58,23 @@ app.get('/login', async(req,res) => {
   // res.render('login', {  courseData : result })
 })
 
+```
+5) Example of Issue Card
+  - [Closed Issue](https://github.com/HubbbaBubbba/StackOps/issues/3)
+6)Workflow
+``` diff
+name: Move assigned card
+on:
+  issues:
+    types:
+      - assigned
+jobs:
+  move-assigned-card:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: alex-page/github-project-automation-plus@5bcba1c1c091a222584d10913e5c060d32c44044
+        with:
+          project: CIS Course Database
+          column: Todo
+          repo-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 ```
