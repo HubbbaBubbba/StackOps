@@ -9,8 +9,8 @@
 **So that** I can take them
 
 # The Process
-1) Initial Design ideas
- - [https://github.com/HubbbaBubbba/StackOps/wiki/The-Process]
+1) Rough Draft Design
+ - [Design Wiki](https://github.com/HubbbaBubbba/StackOps/wiki/The-Process)
 3) Remember to `npm i dotenv`
 - This will create a secret environment within the codespace
 - Once installed type `touch .env`
