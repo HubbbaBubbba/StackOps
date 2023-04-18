@@ -19,6 +19,7 @@
  - [Intro Wiki](https://github.com/HubbbaBubbba/StackOps/wiki)
 3) Rough Draft Design
  - [Design Wiki](https://github.com/HubbbaBubbba/StackOps/wiki/The-Process)
+ - [Design Inspiration](https://codepen.io/bartaxyz/pen/DZJwQX)
 4) Some of our login code
 
 ```javascript
