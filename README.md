@@ -20,6 +20,9 @@
 3) Rough Draft Design
  - [Design Wiki](https://github.com/HubbbaBubbba/StackOps/wiki/The-Process)
  - [Design Inspiration](https://codepen.io/bartaxyz/pen/DZJwQX)
+![footer](https://user-images.githubusercontent.com/111534176/232890997-8d3069af-ece3-4d12-9124-1d39717eea7d.jpg)
+![moredesign](https://user-images.githubusercontent.com/111534176/232891059-c0aad41e-51d6-43a8-9145-337d076cce11.jpg)
+
 4) Some of our login code
 
 ```javascript
