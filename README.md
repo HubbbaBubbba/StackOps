@@ -12,6 +12,12 @@
 
 **So that** I can take them
 
+**As a** student
+
+**I want** to select a class
+
+**So that** I can learn more about them
+
 # The Process :exclamation:
 1)Project Board 
  - [CourseInsider Project Board](https://github.com/users/HubbbaBubbba/projects/2)
