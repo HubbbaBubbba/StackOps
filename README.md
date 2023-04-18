@@ -9,57 +9,47 @@
 **So that** I can take them
 
 # The Process
-1) Rough Draft Design
+1) Introduction of product
+ - [Intro Wiki](https://github.com/HubbbaBubbba/StackOps/wiki)
+2) Rough Draft Design
  - [Design Wiki](https://github.com/HubbbaBubbba/StackOps/wiki/The-Process)
-3) Remember to `npm i dotenv`
-- This will create a secret environment within the codespace
-- Once installed type `touch .env`
-  - Ethan is the only one with access to URI password
-  - If you guys can figure out how to change that, `wonderful`:sunglasses: 
-4) Change DataBase and Collections names within the code to match personal MongoDB
+3) Some of our login code
+
 ```javascript
-try{
-    client.connect; 
-    const collection = client.db("***YOURDBNAME***").collection("***YOURCOLLECTIONNAME***");
-    // const collection = client.db("papa").collection("dev-profiles");
-    const result = await collection.find().toArray();
-    //const result = await collection.findOne(); 
-    console.log("cxnDB result: ", result);
-    return result; 
-  }
-  catch(e){
-      console.log(e)
-  }
-  finally{
-    client.close; 
-  }
+app.get('/', async (req, res) => {
+
+if(req.query.username && req.query.password)   
+{ //authenticated
+  console.log("authenticated", req.query.username);
+
+}
+else
+{
+  //you aint 
+  console.log("not", req.query.username);
+
+}
+
+
+  if(true){
+    console.log("im authenticated!"); 
+
+    let result = await cxnDB().catch(console.error); 
+    // console.log("get/: ", result);
+    res.render('index', {  courseData : result })
+}
+// else if(authenticated === false) {
+//   console.log("im NOT authenticated!"); 
+//   // authenticated = true;
+//   res.redirect('/login');
+// }
+})
+
+app.get('/login', async(req,res) => {
+
+  res.render('login'); 
+
+  // res.render('login', {  courseData : result })
+})
+
 ```
-```javascript
-  app.get('/update', async (req, res) => {
-
-  //get data from the form 
-
-  console.log("in get to slash update:", req.query.ejsFormName); 
-  animal_input = req.query.ejsFormName; 
-
-  //update in the database. 
-  client.connect; 
-  const collection = client.db("***YOURDBNAME***").collection("***YOURCOLLECTIONNAME***");
-  await collection.insertOne({ 
-    animal: animal_input
-  })
-
-  })
-```
-4) Run on `Localhost:3000`
-- test code, put in an animal, and click submit
-- Check console log for name submitted
-  - should look like:
-```diff
-$ node app.js
-in the node console
-Example app listening on port 3000
-in get to slash update: Cow
-```
-5) Check MongoDB for "Cow"
-- If Cow is in your DB, then you have succesfully C & R'd
