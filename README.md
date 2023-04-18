@@ -4,19 +4,20 @@
 
 ![course_insider_logo_trans](https://user-images.githubusercontent.com/111534176/232884866-4573578f-29f2-4f09-8eae-970c75079c17.png)
 
-# User Story :raising_hand:
+# User Story :raising_hand: :book:
 
-**As a** student
+**As a** student :woman_technologist:
 
-**I want** to find classes that have python 
+**I want** to find classes that have python :mag:
 
-**So that** I can take them
+**So that** I can take them :memo:  
+<br />
 
-**As a** student
+**As a** student :technologist:
 
-**I want** to select a class
+**I want** to select a class :mag:
 
-**So that** I can learn more about them
+**So that** I can learn more about them :book: 
 
 # The Process :exclamation:
 1)Project Board 
