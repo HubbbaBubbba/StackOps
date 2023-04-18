@@ -2,6 +2,8 @@
 
 # CourseInsider
 
+![course_insider_logo_trans](https://user-images.githubusercontent.com/111534176/232884866-4573578f-29f2-4f09-8eae-970c75079c17.png)
+
 **As a** student
 
 **I want** to find classes that have python 
