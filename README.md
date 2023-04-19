@@ -2,38 +2,95 @@
 
 # CourseInsider
 
-**As a** student
+![course_insider_logo_trans](https://user-images.githubusercontent.com/111534176/232884866-4573578f-29f2-4f09-8eae-970c75079c17.png)
 
-**I want** to find classes that have python 
+# User Story :raising_hand: :book:
 
-**So that** I can take them
+**As a** student :woman_technologist:
 
-## Introduction
-The CIS Classes Database Project is a web development project aimed at creating a platform where students can share their experiences about the CIS classes they have taken. The platform will offer a database of CIS courses, and students will have an opportunity to provide feedback on the courses they have already taken.
-________________________________________
-## Features
-**User Authentication:** Users will need to be able to create accounts (?) and log in to access the CIS classes database and add comments about the classes they have taken.
+**I want** to find classes that have python :mag:
 
-**Database Design:** The CIS classes database should include information about each class, including the course name, course number, description, professor, and semester offered. There should also be a table to store user comments about each class.
+**So that** I can take them :memo:  
+<br />
 
-**Class Search:** Users should be able to search for classes based on keywords or by specific criteria, such as course code, course name, instructor name, and course rating.
+**As a** student :technologist:
 
-**Class Details:** When a user clicks on a class, they should be able to see detailed information about the class. This information should include the course description, prerequisites, textbook requirements, and professor reviews. It should also detail the programming languages taught in the class, and the languages required to do well in the class. Perhaps symbols can be used to represent the languages.
+**I want** to select a class :mag:
 
-**User Comments:** Users should be able to add comments about the classes they have taken, including their experience with the professor, the workload, and the difficulty level. Users should also be able to rate the class on a scale of 1-5 stars. The platform will aggregate the ratings and reviews given by the students for each course. The ratings will be displayed on the course page to help students make informed decisions when choosing their next CIS course.
+**So that** I can learn more about them :book: 
 
-**Admin Panel:** An admin panel should be created to manage the database and user accounts. This panel should allow administrators to add new classes, edit existing classes, and delete inappropriate comments.
+# The Process :exclamation:
+1)Project Board 
+ - [CourseInsider Project Board](https://github.com/users/HubbbaBubbba/projects/2)
+2) Introduction of product
+ - [Intro Wiki](https://github.com/HubbbaBubbba/StackOps/wiki)
+3) Rough Draft Design
+ - [Design Wiki](https://github.com/HubbbaBubbba/StackOps/wiki/The-Process)
+ - [Design Inspiration](https://codepen.io/bartaxyz/pen/DZJwQX)
+ - We will also be changing colors to match our logo for uniformity.
+![stackops-login-page](https://user-images.githubusercontent.com/111534176/232892340-3ef597df-b5bd-4600-a134-51f90bb8ae5d.jpg)
+![stackops-searchfilter-page](https://user-images.githubusercontent.com/111534176/232892352-b776e626-5eaf-44de-bd8f-e051cefc4b67.jpg)
+![footer](https://user-images.githubusercontent.com/111534176/232890997-8d3069af-ece3-4d12-9124-1d39717eea7d.jpg)
+![moredesign](https://user-images.githubusercontent.com/111534176/232891059-c0aad41e-51d6-43a8-9145-337d076cce11.jpg)
 
-**Responsive Design:** The website should be designed to work well on all devices, including desktops, tablets, and mobile phones.
+4) Some of our login code
 
-**Security:** The website should be secure to prevent unauthorized access to user data and prevent attacks like SQL injection and cross-site scripting.
+```javascript
+app.get('/', async (req, res) => {
 
-**Testing and Deployment:** The website should be thoroughly tested for functionality and security before being deployed to a live server. Regular maintenance and updates should be performed to ensure the website remains functional and secure.
+if(req.query.username && req.query.password)   
+{ //authenticated
+  console.log("authenticated", req.query.username);
+
+}
+else
+{
+  //you aint 
+  console.log("not", req.query.username);
+
+}
 
 
-Future features:
-•	User Dashboard: Users should have a personalized dashboard where they can see their comments, edit their profile, and view their activity on the site.
-________________________________________
-## Conclusion
-Overall, this web development project would require skills in database design, user authentication, front-end and back-end web development, and security best practices.
-The CIS Classes Database Project will provide a valuable resource for students to share their experiences and make informed decisions when selecting CIS courses. The platform will also provide valuable feedback to the CIS department, which they can use to improve the quality of the courses offered.
+  if(true){
+    console.log("im authenticated!"); 
+
+    let result = await cxnDB().catch(console.error); 
+    // console.log("get/: ", result);
+    res.render('index', {  courseData : result })
+}
+// else if(authenticated === false) {
+//   console.log("im NOT authenticated!"); 
+//   // authenticated = true;
+//   res.redirect('/login');
+// }
+})
+
+app.get('/login', async(req,res) => {
+
+  res.render('login'); 
+
+  // res.render('login', {  courseData : result })
+})
+
+```
+5) Example of Issue Card
+  - [Closed Issue](https://github.com/HubbbaBubbba/StackOps/issues/3)
+6) Workflow
+``` diff
+name: Move assigned card
+on:
+  issues:
+    types:
+      - assigned
+jobs:
+  move-assigned-card:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: alex-page/github-project-automation-plus@5bcba1c1c091a222584d10913e5c060d32c44044
+        with:
+          project: CIS Course Database
+          column: Todo
+          repo-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+```
+ - Still in Progress
+ - Will allow us to automatically move items from new -> ToDo when assigning new members to issues.
