@@ -5,8 +5,6 @@
     <title>Search Courses</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
     <link rel="stylesheet" href="/styles/index.css">
    
 </head>
@@ -17,21 +15,19 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <span>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="https://www.linkedin.com/in/ethan-hubbard-1a74b2244/" target ="_blank">LinkedIn</a>
+          <a class="nav-link" href="https://www.linkedin.com/in/ethan-hubbard-1a74b2244/" target ="_blank">WIP</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/HubbbaBubbba/FoxTrot-Lab-Mid-Term" target ="_blank">Foxtrot Repo</a>
+          <a class="nav-link" href="https://github.com/HubbbaBubbba/FoxTrot-Lab-Mid-Term" target ="_blank">WIP</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" target ="_blank">Check this page's validation</a>
+          <a class="nav-link" href="#" target ="_blank">WIP</a>
         </li>
       </ul>
     </div>
-  </span>
   </div>
 </nav>
 <h3>Course Library</h3> 
@@ -45,7 +41,7 @@
 
 <h3>Update the Course</h3> 
  <% for (var i=0; i< courseData.length; i++ ) { %>
-  <form method="POST" action="/updateCourse/<%= courseData[i]._id %>" style="display: inline-block">  
+  <form method="POST" action="/updateCourse/<%= courseData[i]._id %>" style="display: inline-block" id = "testing">  
     <%= courseData[i].game %> (<%= courseData[i].size %>) 
     <input type="submit" value="update"> 
   </form>
@@ -55,45 +51,15 @@
 
 <form method="get" action="/create">
     <p>Add a course</p>
-    <input type="text" name="ejsFormName" value=""> 
+    <input type="text" name="course_name" value="course"> 
+    <input type="text" name="description" value="description"> 
+    <input type="text" name="count" value="count"> 
     <input type="submit" onclick="document.location.reload()">
   </form>
-  <!-- <footer class="footer bg-light text-center">
+  <footer class="footer bg-light text-center">
     <div class="container">
       <span class="text-muted">© WIP, stand by </span>
     </div>
-  </footer> -->
-  <div class="footer-dark">
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-3 item">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="#">Web design</a></li>
-                        <li><a href="#">Development</a></li>
-                        <li><a href="#">Hosting</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-3 item">
-                    <h3>About</h3>
-                    <ul>
-                        <li><a href="#">Company</a></li>
-                        <li><a href="#">Meet the Team</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6 item text">
-                    <h3>CourseInsider</h3>
-                    <p>CourseInsider is an application designed to provide 
-                      CIS students at the University of North Alabama with specific insights about 
-                      the courses they take. This comes in the form of ratings, difficulty levels, 
-                      and languages/applications used.</p>
-                </div>
-                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
-            </div>
-            <p class="copyright">CourseInsider © 2023</p>
-        </div>
-    </footer>
+  </footer>
 </body>
 </html>
