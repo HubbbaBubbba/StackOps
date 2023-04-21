@@ -89,9 +89,7 @@ app.get('/create', async (req, res) => {~
   try {
 
     await collection.insertMany([
-      { course_name: course_pull},
-      { description: desc_pull },
-      { count: count_pull }
+      { course_name: course_pull, description: desc_pull, count: count_pull },
     ]);
     // .then(result => {
     //   console.log(result); 
