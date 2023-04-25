@@ -37,7 +37,7 @@
 <h3>Course Library</h3> 
  <% for (var i=0; i< courseData.length; i++ ) { %>
   <form method="POST" action="/deleteCourse/<%= courseData[i]._id %>" style="display: inline-block">  
-    <%= courseData[i].game %> (<%= courseData[i].size %>) 
+    <%= courseData[i].course_name %> <%= courseData[i].description %> <%= courseData[i].count %>(<%= courseData[i].size %>) 
     <input type="submit" value="delete"> 
   </form>
   <br/>
@@ -46,7 +46,7 @@
 <h3>Update the Course</h3> 
  <% for (var i=0; i< courseData.length; i++ ) { %>
   <form method="POST" action="/updateCourse/<%= courseData[i]._id %>" style="display: inline-block" id = "testing">  
-    <%= courseData[i].game %> (<%= courseData[i].size %>) 
+    <%= courseData[i].course_name %> <%= courseData[i].description %> <%= courseData[i].count %>(<%= courseData[i].size %>) 
     <input type="submit" value="update"> 
   </form>
   <br/>
