@@ -62,12 +62,8 @@ app.get('/', async (req, res) => {
   // }
 })
 
-<<<<<<< HEAD
-app.get('/login', async (req, res) => {
-=======
 //login
 app.get('/login', async(req,res) => {
->>>>>>> main
 
   res.render('login');
 
