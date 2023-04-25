@@ -28,7 +28,7 @@
  - [Design Wiki](https://github.com/HubbbaBubbba/StackOps/wiki/The-Process)
  - [Design Inspiration](https://codepen.io/bartaxyz/pen/DZJwQX)
  - We will also be changing colors to match our logo for uniformity.
-![stackops-login-page](https://user-images.githubusercontent.com/111534176/232892340-3ef597df-b5bd-4600-a134-51f90bb8ae5d.jpg)
+![anton_logo](https://user-images.githubusercontent.com/111534176/234392525-6e776bc4-d1ae-45bc-9994-0c2addd77d12.png)
 ![stackops-searchfilter-page](https://user-images.githubusercontent.com/111534176/232892352-b776e626-5eaf-44de-bd8f-e051cefc4b67.jpg)
 ![footer](https://user-images.githubusercontent.com/111534176/232890997-8d3069af-ece3-4d12-9124-1d39717eea7d.jpg)
 ![moredesign](https://user-images.githubusercontent.com/111534176/232891059-c0aad41e-51d6-43a8-9145-337d076cce11.jpg)
