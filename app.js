@@ -106,6 +106,7 @@ app.get('/create', async (req, res) => {~
     await collection.insertMany([
       { course_name: course_pull, description: desc_pull, count: count_pull },
     ]);
+    res.redirect('/');
     // .then(result => {
     //   console.log(result); 
     //   res.redirect('/');
