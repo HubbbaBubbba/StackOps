@@ -36,18 +36,24 @@ async function cxnDB() {
 }
 
 app.get('/', async (req, res) => {
+  console.log("in the search2??");
+  res.render('search2');
+})
 
-  if (req.query.username && req.query.password) { //authenticated
-    console.log("authenticated", req.query.username);
+app.get('/search2', async (req, res) => {
+  console.log("in the search2");
+  res.render('search2');
+})
 
-  }
-  else {
-    //you aint 
-    console.log("not", req.query.username);
+//login
+app.get('/login', async(req,res) => {
+  res.render('login');
 
-  }
+  // res.render('login', {  courseData : result })
+})
 
-
+//index
+app.get('/index', async(req,res) => {
   if (true) {
     console.log("im authenticated!");
 
@@ -55,17 +61,13 @@ app.get('/', async (req, res) => {
     console.log("get/: ", result);
     res.render('index', { courseData: result })
   }
-  // else if(authenticated === false) {
-  //   console.log("im NOT authenticated!"); 
-  //   // authenticated = true;
-  //   res.redirect('/login');
-  // }
-})
+  else if(authenticated === false) {
+    console.log("im NOT authenticated!"); 
+    // authenticated = true;
+    res.redirect('/login');
+  }
 
-//login
-app.get('/login', async(req,res) => {
-
-  res.render('login');
+  // res.render('index');
 
   // res.render('login', {  courseData : result })
 })
