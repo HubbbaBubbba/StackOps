@@ -94,3 +94,5 @@ jobs:
 ```
  - Still in Progress
  - Will allow us to automatically move items from new -> ToDo when assigning new members to issues.
+ # Code snippets
+ - [Code](https://github.com/HubbbaBubbba/StackOps/wiki/Coding-Journey)
