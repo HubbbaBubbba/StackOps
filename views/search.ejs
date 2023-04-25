@@ -12,13 +12,30 @@
 
 <body>
   <div class="container">
+    <!-- search filter input row -->
     <div class="row">
       <div class="col-sm-12 mb-3">
         <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for names.." />
       </div>
     </div>
+
+    <!-- course list row -->
     <div class="row" id="myItems">
       <div class="col-sm-12 mb-3">
+       
+        <!-- course cards -->
+        <% for (var i=0; i< courseData.length; i++ ) { %>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#"> <%= courseData[i].course_name %></a></h5>
+              <h6 class="card-subtitle mb-2 text-muted"><%= courseData[i].description %></h6>
+              <p class="card-text"><%= courseData[i].count %>(<%= courseData[i].size %>)
+              </p>
+            </div>
+          </div>
+        <% } %> 
+      
+        <hr><p>hard coded courses👇🏼</p><hr> 
         <div class="card">
           <div class="card-body">
             <h5 class="card-title"><a href="#">CIS 476 - Software Architecture</a></h5>

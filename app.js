@@ -9,11 +9,13 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 // let authenticated = false;
 
 const client = new MongoClient(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
 app.use(express.static(__dirname + '/public'));
+
 async function cxnDB() {
 
   try {
@@ -33,8 +35,6 @@ async function cxnDB() {
   }
 }
 
-
-
 app.get('/', async (req, res) => {
 
   if (req.query.username && req.query.password) { //authenticated
@@ -52,7 +52,7 @@ app.get('/', async (req, res) => {
     console.log("im authenticated!");
 
     let result = await cxnDB().catch(console.error);
-    // console.log("get/: ", result);
+    console.log("get/: ", result);
     res.render('index', { courseData: result })
   }
   // else if(authenticated === false) {
@@ -72,18 +72,20 @@ app.get('/login', async(req,res) => {
 
 //search
 app.get('/search', async(req,res) => {
+  
   console.log("in the search")
-  res.render('search');
+
+  let result = await cxnDB().catch(console.error);
+  // console.log("search/: ", result);
+  res.render('search', { courseData: result })
+
+  // res.render('search');
   console.log("after render search")
 
   // res.render('login', {  courseData : result })
 })
 
-
-
-
-//CREATE
-
+//create
 app.get('/create', async (req, res) => {~
 
   //get data from the form 
@@ -127,8 +129,7 @@ app.get('/mongo', async (req, res) => {
 
 })
 
-//UPDATE
-
+//update
 app.post('/updateCourse/:id', async (req, res) => {
 
   try {
@@ -150,8 +151,7 @@ app.post('/updateCourse/:id', async (req, res) => {
 
 })
 
-// DELETE
-
+// delete
 app.post('/deleteCourse/:id', async (req, res) => {
 
   try {
@@ -175,8 +175,6 @@ app.post('/deleteCourse/:id', async (req, res) => {
 })
 
 // CARDS
-
-
 console.log('in the node console');
 
 app.listen(PORT, () => {
