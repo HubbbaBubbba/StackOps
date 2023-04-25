@@ -62,12 +62,29 @@ app.get('/', async (req, res) => {
   // }
 })
 
+<<<<<<< HEAD
 app.get('/login', async (req, res) => {
+=======
+//login
+app.get('/login', async(req,res) => {
+>>>>>>> main
 
   res.render('login');
 
   // res.render('login', {  courseData : result })
 })
+
+//search
+app.get('/search', async(req,res) => {
+  console.log("in the search")
+  res.render('search');
+  console.log("after render search")
+
+  // res.render('login', {  courseData : result })
+})
+
+
+
 
 //CREATE
 
