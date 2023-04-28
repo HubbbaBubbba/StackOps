@@ -7,6 +7,11 @@ body{
     font-size: 22px;
 }
 
+h1{
+  font-family: 'Anton';
+  text-decoration: underline;
+}
+
  .footer-dark{
     position: absolute; 
     /* bottom: 0; */
