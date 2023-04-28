@@ -30,7 +30,7 @@ body {
   
   .custom-btn {
     width: fit-content;
-    height: 50px;
+    height: auto;
     color: #fff;
     border-radius: 5px;
     padding: 10px 25px;
