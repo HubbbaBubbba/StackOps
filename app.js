@@ -35,10 +35,10 @@ async function cxnDB() {
   }
 }
 
-app.get('/', async (req, res) => {
-  console.log("in the search2??");
-  res.render('search2');
-})
+// app.get('/', async (req, res) => {
+//   console.log("in the search2??");
+//   res.render('search2');
+// })
 
 app.get('/search2', async (req, res) => {
   console.log("in the search2");
@@ -74,6 +74,21 @@ app.get('/index', async(req,res) => {
 
 //search
 app.get('/search', async(req,res) => {
+  
+  console.log("in the search")
+
+  let result = await cxnDB().catch(console.error);
+  // console.log("search/: ", result);
+  res.render('search', { courseData: result })
+
+  // res.render('search');
+  console.log("after render search")
+
+  // res.render('login', {  courseData : result })
+})
+
+// new search
+app.get('/', async(req,res) => {
   
   console.log("in the search")
 
