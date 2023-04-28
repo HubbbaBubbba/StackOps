@@ -1,5 +1,27 @@
 body{
     background-color: rgba(108, 121, 119, 0.192);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+/* position: relative; */
+margin-top: auto;
+font-family: 'Anton';
+font-weight: 100;
+}
+
+.bg-dark ul{
+  list-style:none;
+  padding:0;
+  margin-bottom: 0;
+}
+
+.bg-dark ul a {
+    color: white;
+    text-decoration:none;
+    opacity:0.6;
 }
 
 .navbar-brand {
@@ -12,9 +34,14 @@ h1{
   text-decoration: underline;
 }
 
- .footer-dark{
+h1{
+  font-family: 'Anton';
+  text-decoration: underline;
+}
+
+ /* .footer-dark{
     position: absolute; 
-    /* bottom: 0; */
+    bottom: 0;
     width: 100%;
     font-family: 'Anton';
     font-weight: 100;
@@ -22,8 +49,7 @@ h1{
 } 
 
 .footer-dark {
-    padding:60px 0;
-    height: auto;
+    padding:50px 0;
     color:#f0f9ff;
     background-color:#282d32;
   }
@@ -110,5 +136,5 @@ h1{
     opacity:0.3;
     font-size:13px;
     margin-bottom:0;
-  }
+  } */
   
