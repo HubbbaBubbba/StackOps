@@ -108,7 +108,7 @@ app.get('/create', async (req, res) => {~
     await collection.insertMany([
       { course_name: course_pull, description: desc_pull, count: count_pull },
     ]);
-    res.redirect('/');
+    res.redirect('/index');
     // .then(result => {
     //   console.log(result); 
     //   res.redirect('/');
@@ -144,7 +144,7 @@ app.post('/updateCourse/:id', async (req, res) => {
       { "_id": new ObjectId(req.params.id) }, { $set: { game: "Halo" } })
       .then(result => {
         console.log(result);
-        res.redirect('/');
+        res.redirect('/index');
       })
       .catch(error => console.error(error))
   }
@@ -167,7 +167,7 @@ app.post('/deleteCourse/:id', async (req, res) => {
 
       .then(result => {
         console.log(result);
-        res.redirect('/');
+        res.redirect('/index');
       })
       .catch(error => console.error(error))
   }
