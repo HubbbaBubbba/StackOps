@@ -39,7 +39,6 @@ ________________________________________
 **So that** I can advise students or decide on my classes 🏷️  
 <br><br>
 [CourseInsider](https://cisdatabase.onrender.com/)
-![MongoDB](https://user-images.githubusercontent.com/111534176/235577709-076d507d-34a3-4e98-a775-bef625c2c620.PNG)
 
 ________________________________________
 ## The Building Blocks :heavy_check_mark:  :heavy_plus_sign: :negative_squared_cross_mark: :arrow_right: :white_check_mark:
@@ -52,7 +51,10 @@ ________________________________________
 ________________________________________
 ## The Process :fireworks: :runner: :walking:
 * [Original Design](https://github.com/HubbbaBubbba/StackOps/wiki/The-Process)
-* [Closed Issue](https://github.com/HubbbaBubbba/StackOps/issues/3)
+* [Closed Issue](https://github.com/HubbbaBubbba/StackOps/issues/3) <br>
+![MongoDB](https://user-images.githubusercontent.com/111534176/235577709-076d507d-34a3-4e98-a775-bef625c2c620.PNG) <br>
+![CourseInsider_Render](https://user-images.githubusercontent.com/111534176/235577912-24c96c72-ae26-4dbe-863c-796f400f57c7.png)
+
 ________________________________________
 ## The :heavy_plus_sign:
 * [Workflows](https://github.com/HubbbaBubbba/StackOps/blob/92f93e3d5840c02c235a1c0aaa9f248a2008cd09/workflows/learn-github-actions.yml#L10-L23)
