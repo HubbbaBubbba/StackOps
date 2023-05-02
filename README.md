@@ -52,7 +52,9 @@ ________________________________________
 ## The Process :fireworks: :runner: :walking:
 * [Original Design](https://github.com/HubbbaBubbba/StackOps/wiki/The-Process)
 * [Closed Issue](https://github.com/HubbbaBubbba/StackOps/issues/3) <br>
+* Our MongoDB
 ![MongoDB](https://user-images.githubusercontent.com/111534176/235577709-076d507d-34a3-4e98-a775-bef625c2c620.PNG) <br>
+* Our Render
 ![CourseInsider_Render](https://user-images.githubusercontent.com/111534176/235577912-24c96c72-ae26-4dbe-863c-796f400f57c7.png)
 
 ________________________________________
