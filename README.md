@@ -1,10 +1,23 @@
-# Team Stack-Ops
-
-# CourseInsider
-
+## Let's Begin :blue_book:
+* We are Stack Ops:exclamation:
+* Lauren Malone, Omonegho Ugheoke, and Ethan Hubbard
+* Our product is CourseInsider <br><br>
 ![course_insider_logo_trans](https://user-images.githubusercontent.com/111534176/232884866-4573578f-29f2-4f09-8eae-970c75079c17.png)
+________________________________________
+## What is this product all about:grey_question::grey_question::grey_question:
+________________________________________
 
-# User Story :raising_hand: :book:
+### Allowing users to find their courses through a filtering system:
+* Search Classes
+* Search for Languages
+* Search for descriptors
+### Allowing Administrators to Add/Drop Courses:
+* Using a log-in system
+* Add a course name, number, and description
+* Not limited to languages
+________________________________________
+## It's Demo Time :construction:
+### User Story :raising_hand: :book:
 
 **As a** student :woman_technologist:
 
@@ -17,82 +30,27 @@
 
 **I want** to select a class :mag:
 
-**So that** I can learn more about them :book: 
+**So that** I can learn more about them :book: <br><br>
 
-# The Process :exclamation:
-1)Project Board 
- - [CourseInsider Project Board](https://github.com/users/HubbbaBubbba/projects/2)
-2) Introduction of product
- - [Intro Wiki](https://github.com/HubbbaBubbba/StackOps/wiki)
-3) Rough Draft Design
- - [Design Wiki](https://github.com/HubbbaBubbba/StackOps/wiki/The-Process)
- - [Design Inspiration](https://codepen.io/bartaxyz/pen/DZJwQX)
- - We will also be changing colors to match our logo for uniformity.
-![anton_logo](https://user-images.githubusercontent.com/111534176/234392525-6e776bc4-d1ae-45bc-9994-0c2addd77d12.png)
-![stackops-searchfilter-page](https://user-images.githubusercontent.com/111534176/232892352-b776e626-5eaf-44de-bd8f-e051cefc4b67.jpg)
-![footer](https://user-images.githubusercontent.com/111534176/232890997-8d3069af-ece3-4d12-9124-1d39717eea7d.jpg)
-![moredesign](https://user-images.githubusercontent.com/111534176/232891059-c0aad41e-51d6-43a8-9145-337d076cce11.jpg)
+**As a** UNA Computing Community Member :man:
 
-4) Some of our login code
+**I want** to add course names, languages, and descriptions of CIS courses :bookmark:
 
-```javascript
-app.get('/', async (req, res) => {
-
-if(req.query.username && req.query.password)   
-{ //authenticated
-  console.log("authenticated", req.query.username);
-
-}
-else
-{
-  //you aint 
-  console.log("not", req.query.username);
-
-}
-
-
-  if(true){
-    console.log("im authenticated!"); 
-
-    let result = await cxnDB().catch(console.error); 
-    // console.log("get/: ", result);
-    res.render('index', {  courseData : result })
-}
-// else if(authenticated === false) {
-//   console.log("im NOT authenticated!"); 
-//   // authenticated = true;
-//   res.redirect('/login');
-// }
-})
-
-app.get('/login', async(req,res) => {
-
-  res.render('login'); 
-
-  // res.render('login', {  courseData : result })
-})
-
-```
-5) Example of Issue Card
-  - [Closed Issue](https://github.com/HubbbaBubbba/StackOps/issues/3)
-6) Workflow
-``` diff
-name: Move assigned card
-on:
-  issues:
-    types:
-      - assigned
-jobs:
-  move-assigned-card:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: alex-page/github-project-automation-plus@5bcba1c1c091a222584d10913e5c060d32c44044
-        with:
-          project: CIS Course Database
-          column: Todo
-          repo-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-```
- - Still in Progress
- - Will allow us to automatically move items from new -> ToDo when assigning new members to issues.
- # Code snippets
- - [Code](https://github.com/HubbbaBubbba/StackOps/wiki/Coding-Journey)
+**So that** I can advise students or decide on my classes 🏷️  
+<br><br>
+[CourseInsider](https://cisdatabase.onrender.com/)
+________________________________________
+## The Building Blocks :heavy_check_mark:  :heavy_plus_sign: :negative_squared_cross_mark: :arrow_right: :white_check_mark:
+### Filter Function
+* [Filter Code](https://github.com/HubbbaBubbba/StackOps/blob/92f93e3d5840c02c235a1c0aaa9f248a2008cd09/views/search.ejs#L44-L62)
+### 3 variables saved into one document
+* [Document Code](https://github.com/HubbbaBubbba/StackOps/blob/92f93e3d5840c02c235a1c0aaa9f248a2008cd09/app.js#L106-L135)
+### Log-in Page
+* [Log-in Code](https://github.com/HubbbaBubbba/StackOps/blob/92f93e3d5840c02c235a1c0aaa9f248a2008cd09/app.js#L48-L68)
+________________________________________
+## The Process :fireworks: :runner: :walking:
+* [Original Design](https://github.com/HubbbaBubbba/StackOps/wiki/The-Process)
+* [Closed Issue](https://github.com/HubbbaBubbba/StackOps/issues/3)
+________________________________________
+## The :heavy_plus_sign:
+* [Workflows](https://github.com/HubbbaBubbba/StackOps/blob/92f93e3d5840c02c235a1c0aaa9f248a2008cd09/workflows/learn-github-actions.yml#L10-L23)
