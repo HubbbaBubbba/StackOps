@@ -61,7 +61,9 @@ ________________________________________
 ## The :heavy_plus_sign:
 * [Workflows](https://github.com/HubbbaBubbba/StackOps/blob/92f93e3d5840c02c235a1c0aaa9f248a2008cd09/workflows/learn-github-actions.yml#L10-L23)
 * Branch Security <br>
+* Go to Settings, Select Branches, This will pop up: <br>
 ![SecurityBranch](https://user-images.githubusercontent.com/111534176/235579180-b5c3509c-8312-4ce7-9863-4151f6a872f1.jpg)
+* These are the different options given under branch security: <br>
 ![SecurityBranch2](https://user-images.githubusercontent.com/111534176/235579184-5922c148-6347-45e9-aaf3-67771426801d.jpg)
 
 
