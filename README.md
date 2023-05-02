@@ -6,7 +6,10 @@
 ________________________________________
 ## What is this product all about:grey_question::grey_question::grey_question:
 ________________________________________
-
+### What problem is this addressing?
+* Hard for UNA CIS students exactly what they are learning
+* Vague Descriptions
+* Does not describe tools used in the class
 ### Allowing users to find their courses through a filtering system:
 * Search Classes
 * Search for Languages
