@@ -35,7 +35,7 @@ ________________________________________
 
 **So that** I can learn more about them :book: <br><br>
 
-**As a** UNA Computing Community Member :man:
+**As a** UNA CSIS Admin :man:
 
 **I want** to add course names, languages, and descriptions of CIS courses :bookmark:
 
